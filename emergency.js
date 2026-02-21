@@ -19,3 +19,34 @@ counters.forEach(counter => {
     };
     updateCount();
 });
+(function() { 
+    function initNavbar() { 
+        const menu = document.getElementById("navMenu"); 
+        const overlay = document.querySelector(".overlay"); 
+        const menuIcon = document.querySelector(".menu-icon"); 
+ 
+        if (!menu) return; 
+        window.toggleMenu = function() { 
+            menu.classList.toggle("show"); 
+            if (overlay) overlay.classList.toggle("show"); 
+        }; 
+         
+        document.addEventListener("click", function(event) { 
+            if (menu.classList.contains("show")) { 
+                const isClickInsideMenu = menu.contains(event.target); 
+                const isClickOnIcon = menuIcon && menuIcon.contains(event.target); 
+                 
+                if (!isClickInsideMenu && !isClickOnIcon) { 
+                    menu.classList.remove("show"); 
+                    if (overlay) overlay.classList.remove("show"); 
+                } 
+            } 
+        }); 
+    } 
+ 
+    if (document.readyState === "loading") { 
+        document.addEventListener("DOMContentLoaded", initNavbar); 
+    } else { 
+        initNavbar(); 
+    } 
+})();
