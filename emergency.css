@@ -141,32 +141,7 @@ transform: translateY(-3px);
     padding: 22px 30px;
     border-radius: 10px;
 }
-.hero{
-    background-image: url('image/emerg.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px; 
-    width:100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; 
-}
 
-.main h1{
-    font-size: 48px;
-    font-weight: 200;
-    margin-bottom: 30px;
-}
-
-.box{
-    border: 2px solid #249455;
-    font-size: 24px;
-    padding: 22px 30px;
-    border-radius: 10px;
-}
 
 @media (max-width: 700px){
     .main h1{
