@@ -477,7 +477,15 @@ color: rgba(106, 106, 106, 1);
 .know h5{
     font-size: 33px;
 }
-
+.my-video{
+      width: 600px;  
+  height: auto;
+}
+@media (max-width: 450px) {
+  .my-video {
+    width: 100%;
+  }
+}
 .footer{
     background-color: rgba(101, 1, 1, 1);
     color: white;
