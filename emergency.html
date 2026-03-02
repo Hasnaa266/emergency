@@ -17,7 +17,7 @@
 <path d="M22 8.69C22 10.66 21.49 12.4 20.69 13.91C19.81 12.98 18.57 12.4 17.2 12.4C14.55 12.4 12.4 14.55 12.4 17.2C12.4 18.43 12.87 19.55 13.63 20.4C13.26 20.57 12.92 20.71 12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69C2 5.6 4.49 3.09998 7.56 3.09998C9.37 3.09998 10.99 3.98002 12 5.33002C13.01 3.98002 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.6 22 8.69Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a>
-        <a href="index.html" class="logo-text">منقذك</a>
+        <a href="index.html" class="logo-text" >الصحة والسلامة</a>
     </div>
 
     <div class="nav-center" id="navMenu">
@@ -26,6 +26,12 @@
         <a href="#">طوارئ</a>
         <a href="#">تعلم</a>
         <a href="#">مساعد ذكي</a>
+       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/>
+        <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+      <div class="search-box"  >
+    <input type="text"  id="searchInput" class="search-normal" placeholder="بحث ">
+    <i  class="fa-solid fa-magnifying-glass" onclick="searchSection()"></i>
+</div>
     </div>
     <div class="nav-left">
         <button class="btn-login">تسجيل دخول</button>
@@ -60,7 +66,7 @@
          <p>من الاصابات يمكن <br>  إسعافها مبدئيا </p>
         </div>
     </section>
-    <section class="burn">
+    <section class="burn" id="burns">
       <div class="container">
     <div class="burn-text">
       <h2>طوارئ الحروق </h2>
@@ -97,7 +103,7 @@
       <img src="./image/image6.jpg " class="ima4">
     </div>
 
-    <div class="burn-text">
+    <div class="burn-text" id="choking">
       <h2>الإختناق </h2>
       <p>يحدث عند إنسداد مجرى التنفس بجسم غريب </p>
    <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
@@ -120,9 +126,9 @@
 
 
 </section>
-<section class="burn">
+<section class="burn" id="heart">
       <div class="container">
-    <div class="burn-text">
+    <div class="burn-text" id="heart">
       <h2>السكتة القلبية </h2>
       <p> تحدث عند توقف القلب عن ضخ الدم <br>,وهي حالة طوارئ تستدعي التدخل الفوري</p>
   <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
@@ -148,73 +154,126 @@
   </div>
     </div>
     </section>
+     <section class="suffocation">
+      <div class="container">
+        <div class="images">
+     <img src="./image/bleed1.jpg" class="ima3">
+      <img src="./image/bleed2.jpg " class="ima4">
+    </div>
+     <div class="burn-text" id="bleeding">
+      <h2>النزيف</h2>
+      <p>يحدث عند فقدان الدم نتيجة جرح او اصابة</p>
+   <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
+  <ul>
+        <li> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>اضغط مباشرا علي  الجرح بقطعة قماش نظيفة </li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ارفع الجزء المصاب ان امكن</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>لا تزيل الجسم الغريب اذا كان داخل الجرح</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> اربط الضمادة باحكام</li>
+      </ul>
+    </div>
+      </div>
+     </section>
+     <section class="burn">
+      <div class="container">
+    <div class="burn-text" id="piosin">
+      <h2>التسمم</h2>
+      <p> يحدث عند ابتلاع ماده ضاره او استنشاقها</p>
+  <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
+  <ul>
+            <li ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>تاكد من وعي المصاب وتنفسه</li>
+        <li ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>لاتجبره علي القىء</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ابعده عن اي ماده سامه من حوله </li>
+<li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>احتفظ بعبوه الماده ان وجدت </li>
+    
+      </ul>
+    </div>
+<div class="images">
+     <img src="./image/piosin 1.jpg" class="ima1">
+      <img src="./image/piosin2.jpg " class="ima2">
+    </div>
+  </div>
+    </div>
+    </section>
+     <section class="suffocation">
+      <div class="container">
+        <div class="images">
+     <img src="./image/break1.jpg" class="ima3">
+      <img src="./image/break2.jpg " class="ima4">
+    </div>
+     <div class="burn-text" id="fractures">
+      <h2>الكسور </h2>
+      <p>يحدث عند تعرض العظام لصدمة قوية او سقوط مفاجئ</p>
+   <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
+  <ul>
+        <li> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ثبت الجزء المصاب ولا تحركه</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> لا تحاول اعادة العظام لمكانه</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ضع كمادات باردة لتقليل التورم</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ارفع الجزء المصاب ان امكن</li>
+      </ul>
+    </div>
+      </div>
+     </section>
+      <section class="burn">
+      <div class="container">
+    <div class="burn-text" id="amputation">
+      <h2>البتر</h2>
+      <p> يحدث عند انفصال جزء من الجسم نتيجة حادث خطير </p>
+  <h4>اتبع هذه <span class="light">الخطوات بسرعه</span></h4>
+  <ul>
+            <li ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> اوقف النزيف بالضغط المباشر</li>
+        <li ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>لف الجزء المبتور بقطعة شاش نظيفة</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ضع الجزء في كيس نظيف محكم الغلق</li>
+<li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 13L10 16L17 9M11 20L14 23L21 16" stroke="#4a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ضع الكيس داخل كيس اخر به ثلج (بدون ملامسة مباشرة)</li>
+    
+      </ul>
+    </div>
+<div class="images">
+     <img src="./image/amputation1.jpg" class="ima1">
+      <img src="./image/amputation2.jpg" class="ima2">
+    </div>
+  </div>
+    </div>
+    </section>
     <div class="notwait">
       <h4> الطوارئ <span class="light">لاتنتظر </span></h4>
       <p>كل ثانية قيمة وقت الطوارئ المعرفة الصحيحة قد <br> تنقذ حياة قبل وصول الإسعاف </p>
-      <video width="1000" height="700" controls>
+      <video class="my-video" controls>
         <source src="video_2026-02-21_23-58-47.mp4 " type="video/mp4">
       </video>
     </div>
-    <!--
-  <div class="know">
-    <h5> تعرف علي فريق الطوارئ</h5>
-    <p style="font-size: 26px;">يضم مجموعة من الأطباء المدربين علي التعامل مع حالات الطوارئ.</p>
-  </div>
-<div class="team-grid">
-  <div class="doctor-card">
-    <div class="imaage">
-      <img src="image/5015c419783c6af2fada7d56cdb1c491772d455f.jpg">
-    </div>
-    <div class="info">
-      <h class="name">د:نورا خالد</h3>
-        <p class="specialty"> 
-أخصائية الحروق و الإصابات الحرجة</p>
-    </div>
-  </div>
-
-   <div class="doctor-card">
-    <div class="imaage">
-      <img src="/image/63ce4f393ac87766371a002829be09d1866e27fa (1).jpg">
-    </div>
-    <div class="info">
-      <h class="name">د:محمد علي</h3>
-        <p class="specialty"> 
- 
-أخصائي حالات الإختناق و الإنعاش</p>
-    </div>
-  </div>
-  <div class="doctor-card">
-    <div class="imaage">
-      <img src="/image/5015c419783c6af2fada7d56cdb1c491772d455f.jpg">
-    </div>
-    <div class="info">
-      <h class="name">د:مايا حسن </h3>
-        <p class="specialty"> 
-أخصائية القلب والطوارئ القلبية</p>
-    </div>
-  </div>
-<div class="doctor-card">
-    <div class="imaage">
-      <img src="/image/63ce4f393ac87766371a002829be09d1866e27fa.jpg">
-    </div>
-    <div class="info">
-      <h class="name">د:مايا حسن </h3>
-        <p class="specialty"> 
-أخصائية القلب والطوارئ القلبية</p>
-    </div>
-  </div>
-  <div class="doctor-card">
-    <div class="imaage">
-      <img src="/image/caea1c560e19acacc827d34ec4dc1ffc806a08be.jpg">
-    </div>
-    <div class="info">
-      <h class="name">د:أحمد محمود </h3>
-        <p class="specialty"> 
-أخصائيةطوارئ واسعافات اولية</p>
-    </div>
-  </div>
-</div>
--->
+   
     <footer class="footer">
       <div class="contain">
         <div class="foryou">

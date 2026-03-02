@@ -50,3 +50,37 @@ counters.forEach(counter => {
         initNavbar(); 
     } 
 })();
+
+  function searchSection() {
+
+    let input = document.getElementById("searchInput")
+        .value
+        .trim()
+        .toLowerCase();
+
+    let sections = {
+        "حروق": "burns",
+        "اختناق": "choking",
+        "كسور": "fractures",
+        "سكتة": "heart",
+        "سكتة قلبية": "heart",
+        "نزيف":"bleeding",
+        "تسمم":"piosin",
+        "بتر": "amputation"
+    };
+
+    let found = false;
+
+    for (let key in sections) {
+        if (input.includes(key)) {
+            document.getElementById(sections[key])
+                .scrollIntoView({ behavior: "smooth" });
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert("الكلمة غير موجودة");
+    }
+}
