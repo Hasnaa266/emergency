@@ -165,32 +165,7 @@ transform: translateY(-3px);
     padding: 22px 30px;
     border-radius: 10px;
 }
-.hero{
-    background-image: url('image/emerg.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px; 
-    width:100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; 
-}
 
-.main h1{
-    font-size: 48px;
-    font-weight: 200;
-    margin-bottom: 30px;
-}
-
-.box{
-    border: 2px solid #249455;
-    font-size: 24px;
-    padding: 22px 30px;
-    border-radius: 10px;
-}
 
 @media (max-width: 700px){
     .main h1{
@@ -526,7 +501,10 @@ color: rgba(106, 106, 106, 1);
 .know h5{
     font-size: 33px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ebc6084ce394d407812a9ae3fe99eaaca4870914
 .my-video{
       width: 600px;  
   height: auto;
@@ -536,7 +514,10 @@ color: rgba(106, 106, 106, 1);
     width: 100%;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ebc6084ce394d407812a9ae3fe99eaaca4870914
 .footer{
     background-color: rgba(101, 1, 1, 1);
     color: white;
